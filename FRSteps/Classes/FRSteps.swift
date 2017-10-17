@@ -10,9 +10,7 @@ import UIKit
 @IBDesignable
 class FRSteps: UIView {
 
-    /**
-     Number of all steps in the process
-     */
+    /// Number of all steps in the process
     @IBInspectable
     var numberOfSteps: Int = 2 {
         didSet {
@@ -20,9 +18,7 @@ class FRSteps: UIView {
         }
     }
 
-    /**
-     Current step number
-     */
+    /// Current step number
     @IBInspectable
     var currentStep: Int = 1 {
         didSet {
@@ -30,9 +26,7 @@ class FRSteps: UIView {
         }
     }
 
-    /**
-     Color of inactive dots and connector
-     */
+    /// Color of inactive dots and connector
     @IBInspectable
     var inactiveDotColor: UIColor = UIColor.black {
         didSet {
@@ -40,22 +34,18 @@ class FRSteps: UIView {
         }
     }
 
-    /**
-     Image of steps
-     */
+    /// Image of steps
     var stepsImage: UIImageView?
 
     // MARK: - Initialization
 
     override init(frame: CGRect) {
-
         super.init(frame: frame)
         xibSetup()
         initializeControl()
     }
 
     required init?(coder aDecoder: NSCoder) {
-
         super.init(coder: aDecoder)
         xibSetup()
         initializeControl()
