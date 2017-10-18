@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-class FRSteps: UIView {
+open class FRSteps: UIView {
 
     /// Number of all steps in the process
     @IBInspectable
@@ -41,13 +41,11 @@ class FRSteps: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        xibSetup()
         initializeControl()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        xibSetup()
         initializeControl()
     }
 
@@ -119,7 +117,7 @@ class FRSteps: UIView {
 
     // MARK: - Interface builder
 
-    override func prepareForInterfaceBuilder() {
+    override open func prepareForInterfaceBuilder() {
         initializeControl()
     }
 }
