@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![preview](https://github.com/johnny12000/FRSteps/blob/master/Assets/Example.png)
+
 ## Requirements
 
 ## Installation
